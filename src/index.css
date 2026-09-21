@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0d0b07;
+    color: #f5f3ef;
+    font-family: "Inter", sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #17140e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e291e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e33038;
+}
+
+/* Tactile Button Press */
+.btn-press {
+  transition: all 0.15s ease-in-out;
+}
+.btn-press:active {
+  transform: translateY(2px);
+}
